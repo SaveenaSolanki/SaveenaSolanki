@@ -1,0 +1,42 @@
+name: Refresh Analytics
+
+on:
+  schedule:
+    # Monthly refresh of the self-hosted achievement wall
+    - cron: "17 3 1 * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/generate_achievements.py"
+      - ".github/workflows/analytics.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate achievement wall
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/generate_achievements.py
+
+      - name: Commit updated analytics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add analytics/achievements.svg
+          if git diff --cached --quiet; then
+            echo "No changes — analytics already up to date."
+          else
+            git commit -m "chore: refresh achievement wall analytics [skip ci]"
+            git push
+          fi

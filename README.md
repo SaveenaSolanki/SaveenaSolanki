@@ -80,15 +80,19 @@ data engineering — each tool ships with a **CLI**, a **Python API**, and a **p
 ## 📊 GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=SaveenaSolanki&show_icons=true&theme=transparent&title_color=5eead4&icon_color=a78bfa&text_color=c9d1d9&bg_color=0d1117&hide_border=true&count_private=true" alt="GitHub stats" height="180">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SaveenaSolanki&layout=compact&langs_count=8&theme=transparent&title_color=5eead4&text_color=c9d1d9&bg_color=0d1117&hide_border=true" alt="Top languages" height="180">
+  <img src="https://github-stats-extended.vercel.app/api?username=SaveenaSolanki&show_icons=true&theme=transparent&title_color=5eead4&icon_color=a78bfa&text_color=c9d1d9&bg_color=0d1117&hide_border=true&count_private=true" alt="GitHub stats" height="180">
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=SaveenaSolanki&layout=compact&langs_count=8&theme=transparent&title_color=5eead4&text_color=c9d1d9&bg_color=0d1117&hide_border=true" alt="Top languages" height="180">
   <br>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=SaveenaSolanki&theme=transparent&background=0d1117&hide_border=true&ring=5eead4&fire=a78bfa&currStreakLabel=5eead4&sideLabels=c9d1d9&dates=8b949e" alt="GitHub streak" width="420">
   <br><br>
-  <img src="https://github-profile-trophy.vercel.app/?username=SaveenaSolanki&theme=algolia&no-bg=true&no-frame=true&margin-w=6&margin-h=6&column=4" alt="GitHub trophies">
+  <img src="analytics/achievements.svg" alt="Achievement wall — self-hosted analytics" width="100%">
   <br><br>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=SaveenaSolanki&theme=react-dark&bg_color=0d1117&hide_border=true&area=true&color=5eead4&line=a78bfa&point=22d3ee" alt="GitHub activity graph" width="100%">
 </div>
+
+> 🏆 The achievement wall is **self-hosted** — generated from the GitHub API by
+> [`.github/workflows/analytics.yml`](.github/workflows/analytics.yml) on a monthly schedule
+> (no third-party badge services).
 
 ---
 
