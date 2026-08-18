@@ -3,7 +3,9 @@
 </p>
 
 <p align="center">
-  <a href="https://saveenasolanki.github.io/">Portfolio</a> · <a href="https://www.linkedin.com/in/saveenasolanki/">LinkedIn</a> · <a href="mailto:saveenas@iiitd.ac.in">Email</a>
+  <a href="https://saveenasolanki.github.io/"><img src="https://img.shields.io/badge/Portfolio-saveenasolanki.github.io-17110d?style=for-the-badge&logo=githubpages&logoColor=17110d&labelColor=f5e3ca" alt="Portfolio"></a>
+  <a href="https://www.linkedin.com/in/saveenasolanki/"><img src="https://img.shields.io/badge/LinkedIn-saveenasolanki-17110d?style=for-the-badge&logo=linkedin&logoColor=17110d&labelColor=d4b87a" alt="LinkedIn"></a>
+  <a href="mailto:saveenas@iiitd.ac.in"><img src="https://img.shields.io/badge/Email-saveenas%40iiitd.ac.in-17110d?style=for-the-badge&logo=gmail&logoColor=17110d&labelColor=ac946f" alt="Email"></a>
 </p>
 
 ---
