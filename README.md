@@ -28,7 +28,7 @@ My research sits at the intersection of:
   <b>MOLECULES</b> &nbsp; → &nbsp; <b>REPRESENTATIONS</b> &nbsp; → &nbsp; <b>INTERACTIONS</b> &nbsp; → &nbsp; <b>BIOLOGICAL SYSTEMS</b> &nbsp; → &nbsp; <b>DISCOVERY</b>
 </p>
 
-My projects address different parts of this continuum — from representation to intervention. The projects below are my own research (01–06); the final entry (07) is collaborative work.
+My projects address different parts of this continuum — from representation to intervention. The projects below are my own research (01–05); the final entry (06) is collaborative work.
 
 ---
 
@@ -36,6 +36,8 @@ My projects address different parts of this continuum — from representation to
 
 ### 01 · SynGlue
 **Designing molecules that control protein fate**
+
+<p align="center"><img src="images/Synglue.png" alt="SynGlue" width="620"></p>
 
 *Why do apparently similar PROTACs produce very different degradation outcomes?*
 
@@ -53,23 +55,10 @@ The platform integrates computational approaches for analysing and designing PRO
 
 ---
 
-### 02 · MetaboGlue
-**Understanding molecules that reprogram protein interactions**
-
-*Can endogenous metabolites and small molecules create, stabilise or inhibit protein interactions?*
-
-MetaboGlue extends my interest from conventional protein–ligand modelling toward unified **Protein–Ligand (PL)** and **Protein–Ligand–Protein (PLP)** interaction modelling. The goal is to understand the molecular principles governing metabolite-mediated protein-interaction modulation and molecular-glue behaviour.
-
-The framework combines ligand, protein and structural information to study how small molecules may alter interaction landscapes rather than acting only through classical one-protein/one-ligand binding.
-
-**Research themes:** Molecular Glues · Protein Interactions · PL/PLP Modelling · Multimodal AI · Structural Biology
-
-**Status:** Active research.
-
----
-
-### 03 · ChemicalDice / CDI
+### 02 · ChemicalDice / CDI
 **Learning representations of molecules**
+
+<p align="center"><img src="images/cdi.png" alt="ChemicalDice / CDI" width="620"></p>
 
 *How should a molecule be represented when no single molecular description captures all of its biology and chemistry?*
 
@@ -90,8 +79,10 @@ These complementary representations are integrated and subsequently distilled in
 
 ---
 
-### 04 · Trojan-Horses
+### 03 · Trojan-Horses
 **Mechanism-aware molecular machine learning**
+
+<p align="center"><img src="images/trojan.png" alt="Trojan-Horses" width="620"></p>
 
 *Can molecular ML distinguish compounds through the mechanisms by which they alter redox biology?*
 
@@ -105,8 +96,10 @@ This work develops mechanism-aware models for analysing ROS modulators and antio
 
 ---
 
-### 05 · EvOlf
+### 04 · EvOlf
 **Evolution-guided ligand–GPCR prediction**
+
+<p align="center"><img src="images/evolf.png" alt="EvOlf" width="620"></p>
 
 *Can evolutionary information improve molecular recognition models across the mammalian GPCRome?*
 
@@ -120,8 +113,10 @@ EvOlf uses evolutionary and molecular information to model ligand–GPCR interac
 
 ---
 
-### 06 · Inertrope
+### 05 · Inertrope
 **Thermodynamic fingerprints as biological signals**
+
+<p align="center"><img src="images/Inertrope.png" alt="Inertrope" width="620"></p>
 
 *Can molecular-interaction thermodynamics encode diagnostically useful biological states?*
 
@@ -135,8 +130,10 @@ Inertrope investigates machine-learning approaches based on thermodynamic and sp
 
 ---
 
-### 07 · Gcoupler *(collaborative)*
+### 06 · Gcoupler *(collaborative)*
 **Structure-guided molecular design**
+
+<p align="center"><img src="images/GCoupler.png" alt="Gcoupler" width="620"></p>
 
 *Can structural information guide the discovery of molecules that modulate protein signalling?*
 
@@ -166,7 +163,7 @@ EvOlf · Trojan-Horses · Gcoupler — understand how molecular structure relate
 
 **Reprogram**
 
-SynGlue · MetaboGlue — study molecules that create, stabilise, inhibit or redirect protein interactions.
+SynGlue — study molecules that create, stabilise, inhibit or redirect protein interactions (targeted degradation).
 
 ↓
 
@@ -216,6 +213,8 @@ A common entry point connecting the reusable components.
 ## Open Scientific Software
 
 ### SciSVG
+
+<p align="center"><img src="images/SciSVG.png" alt="SciSVG" width="620"></p>
 
 [SciSVG](https://github.com/SaveenaSolanki/SciSVG) is an open collection of editable scientific vector graphics designed for figures, presentations and scientific communication.
 
