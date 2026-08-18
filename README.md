@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.svg" alt="Saveena Solanki — Computational Biology and Molecular AI" width="100%">
+  <img src="banner.png" alt="Saveena Solanki — Computational Biology and Molecular AI" width="100%">
 </p>
 
 <p align="center">
