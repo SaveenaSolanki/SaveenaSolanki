@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/SaveenaSolanki/SaveenaSolanki"><img src="https://komarev.com/ghpvc/?username=SaveenaSolanki&label=PROFILE%20VIEWS&color=5eead4&style=flat" alt="Profile views"></a>
-  <a href="https://github.com/SaveenaSolanki?tab=repositories"><img src="https://img.shields.io/badge/public%20repos-11-22d3ee?style=flat&labelColor=0d1117" alt="Public repos"></a>
+  <a href="https://github.com/SaveenaSolanki?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FSaveenaSolanki&query=public_repos&label=public%20repos&color=22d3ee&style=flat&labelColor=0d1117" alt="Public repos"></a>
   <a href="https://saveenasolanki.github.io/"><img src="https://img.shields.io/badge/academic%20site-saveenasolanki.github.io-a78bfa?style=flat&labelColor=0d1117" alt="Academic site"></a>
   <a href="https://github.com/SaveenaSolanki/compbio-toolkit-suite"><img src="https://img.shields.io/badge/CompBio%20Toolkit%20Suite-6%20tools-5eead4?style=flat&labelColor=0d1117" alt="CompBio Toolkit Suite"></a>
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10%2B-38bdf8?style=flat&labelColor=0d1117" alt="Python 3.10+"></a>
