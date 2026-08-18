@@ -88,7 +88,9 @@ The framework combines ligand, protein and structural information to study how s
 
 ---
 
-## Selected First-Author Research
+## Selected Research
+
+EvOlf, Trojan-Horses and Inertrope are **first-author** work; Gcoupler is **contributing-author** work.
 
 ### EvOlf
 **Evolution-guided ligand–GPCR prediction**
@@ -96,6 +98,8 @@ The framework combines ligand, protein and structural information to study how s
 *Can evolutionary information improve molecular recognition models across the mammalian GPCRome?*
 
 EvOlf uses evolutionary and molecular information to model ligand–GPCR interactions across diverse mammalian receptors and species, with applications including receptor deorphanisation. The accompanying computational pipeline supports large-scale ligand–receptor screening using molecular featurisation, protein representations and deep-learning inference.
+
+**Role:** first author
 
 **Themes:** GPCRs · Evolutionary Biology · Protein Embeddings · Molecular Recognition
 
@@ -110,6 +114,8 @@ EvOlf uses evolutionary and molecular information to model ligand–GPCR interac
 
 Gcoupler explores AI-driven structure-based molecular design with applications in GPCR–G-protein signalling and allosteric modulation. The framework combines computational molecular design, graph-based learning, structural information and bioactivity prioritisation.
 
+**Role:** contributing author
+
 **Themes:** Structure-Based Design · Graph Neural Networks · GPCR Signalling · Molecular Design
 
 **Resources:** [Code](https://github.com/the-ahuja-lab/Gcoupler) · [eLife](https://elifesciences.org/reviewed-preprints/106397)
@@ -123,6 +129,8 @@ Gcoupler explores AI-driven structure-based molecular design with applications i
 
 This work develops mechanism-aware models for analysing ROS modulators and antioxidant behaviour while connecting molecular information with biologically interpretable mechanisms.
 
+**Role:** first author
+
 **Themes:** Redox Biology · Mechanistic ML · Molecular Representations · Interpretability
 
 **Resources:** [Code](https://github.com/the-ahuja-lab/Trojan-Horses)
@@ -135,6 +143,8 @@ This work develops mechanism-aware models for analysing ROS modulators and antio
 *Can molecular-interaction thermodynamics encode diagnostically useful biological states?*
 
 Inertrope investigates machine-learning approaches based on thermodynamic and spectroscopic fingerprints for distinguishing biological sample states. This work reflects a broader interest in extracting predictive biological information from biophysical measurements rather than relying only on conventional molecular descriptors.
+
+**Role:** first author
 
 **Themes:** Biophysical ML · Thermodynamics · Diagnostics · Molecular Interactions
 
