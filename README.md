@@ -43,8 +43,18 @@ The same thread runs through everything I build:
 |---|---|---|
 | [**ChemicalDice · CDI**](https://github.com/the-ahuja-lab/ChemicalDice) | Multimodal molecular representation learning — fuses bioactivity, language, graph, physicochemical, and image-based views of a molecule into one latent embedding, distilled into a SMILES-based model for chemical-space generalization | [Code](https://github.com/the-ahuja-lab/ChemicalDice) · [Docs](https://the-ahuja-lab.github.io/ChemicalDice/) · [Colab](https://colab.research.google.com/drive/1I6vQ_7SlhagbnXVlg4btWoYal_NcCElt?usp=sharing) |
 | [**SynGlue**](https://github.com/the-ahuja-lab/SynGlue) | Generative AI for targeted protein degradation — generates, analyzes, and optimizes PROTACs; predicts degradation potency (DC₅₀, Dmax) and guides linker selection | [Code](https://github.com/the-ahuja-lab/SynGlue) · [PyPI](https://pypi.org/project/synglue/) · [Colab](https://colab.research.google.com/drive/1k3UyoqYU_zw6_GbdeaARe155dCi_JO6Q?usp=sharing) |
-| **MetaboGlue** | Modeling metabolite-mediated protein-interaction stabilization and inhibition — molecular glues at the interface of metabolism and proteostasis | *in preparation* |
-| **Mechanism-aware molecular ML** | Connecting chemical representations with interpretable biological mechanisms | *in preparation* |
+
+**Mechanism-aware molecular ML** — *first-author projects*, connecting chemical representations with interpretable biological mechanisms:
+
+| Project | What it is | Links |
+|---|---|---|
+| [**EvOlf**](https://github.com/the-ahuja-lab/EvOlf) | Evolutionary-guided deep learning for mammalian GPCRome agonist prediction — ligand–GPCR interactions across 20+ species, odorant & non-odorant GPCRs, deorphanization | [Code](https://github.com/the-ahuja-lab/EvOlf) · [Web server](https://evolf.ahujalab.iiitd.edu.in/) · [Pipeline](https://github.com/the-ahuja-lab/evolf-pipeline) |
+| [**evolf-pipeline**](https://github.com/the-ahuja-lab/evolf-pipeline) | Nextflow pipeline for large-scale ligand–GPCR interaction screens — featurization, protein embeddings, deep-learning inference on HPC/cloud | [Code](https://github.com/the-ahuja-lab/evolf-pipeline) |
+| [**Trojan-Horses**](https://github.com/the-ahuja-lab/Trojan-Horses) | Mechanism-aware deep learning for ROS modulator & antioxidant activity prediction with mechanistic interpretability | [Code](https://github.com/the-ahuja-lab/Trojan-Horses) |
+| [**Gcoupler**](https://github.com/the-ahuja-lab/Gcoupler) | AI-driven structure-based de novo ligand design — graph neural networks, statistical validation, bioactivity prioritization; GPCR–Gα allosteric modulation | [Code](https://github.com/the-ahuja-lab/Gcoupler) · [eLife preprint](https://elifesciences.org/reviewed-preprints/106397) |
+| [**Inertrope**](https://github.com/the-ahuja-lab/Inertrope) | Thermodynamic fingerprints → liquid-biopsy diagnostics — multiclass classification of ITC/spectroscopic data (Healthy · Benign · Cancer) | [Code](https://github.com/the-ahuja-lab/Inertrope) |
+| **MetaboGlue** | Metabolite-mediated protein-interaction stabilization & inhibition — molecular glues at the interface of metabolism and proteostasis | *in preparation* |
+| **SynMol** | *in preparation* | *in preparation* |
 
 ---
 
