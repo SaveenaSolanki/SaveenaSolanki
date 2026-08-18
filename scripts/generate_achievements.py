@@ -15,16 +15,16 @@ import urllib.request
 USER = "SaveenaSolanki"
 OUT = os.path.join(os.path.dirname(__file__), "..", "analytics", "achievements.svg")
 
-# ---- palette (matches profile banner) ----
-BG = "#0d1117"
-CARD = "#161b27"
-BORDER = "#212a3b"
-TEAL = "#5eead4"
-CYAN = "#22d3ee"
-VIOLET = "#a78bfa"
-SKY = "#38bdf8"
-TEXT = "#c9d1d9"
-DIM = "#8b949e"
+# ---- palette (matches profile banner — vintage espresso / parchment / gold) ----
+BG = "#17110d"
+CARD = "#241a14"
+BORDER = "#3a2c1e"
+GOLD = "#d4b87a"
+TAN = "#ac946f"
+CREAM = "#f5e3ca"
+PALE = "#c9a86a"
+TEXT = "#f5e3ca"
+DIM = "#a08a6c"
 
 
 def api(path):
@@ -115,19 +115,19 @@ def icon_lang(x, y, c):
 def render(data):
     W, H = 1000, 330
     cards = [
-        ("Repositories", fmt(data["repos"]), "public repos", icon_repo, TEAL),
-        ("Total Stars", fmt(data["stars"]), "across all repos", icon_star, CYAN),
-        ("Total Forks", fmt(data["forks"]), "across all repos", icon_fork, SKY),
-        ("Followers", fmt(data["followers"]), "on GitHub", icon_person, VIOLET),
-        ("Following", fmt(data["following"]), "on GitHub", lambda x, y, c: icon_person(x, y, c, True), VIOLET),
-        ("Top Language", data["top_lang"], "by bytes", icon_lang, TEAL),
+        ("Repositories", fmt(data["repos"]), "public repos", icon_repo, GOLD),
+        ("Total Stars", fmt(data["stars"]), "across all repos", icon_star, PALE),
+        ("Total Forks", fmt(data["forks"]), "across all repos", icon_fork, TAN),
+        ("Followers", fmt(data["followers"]), "on GitHub", icon_person, CREAM),
+        ("Following", fmt(data["following"]), "on GitHub", lambda x, y, c: icon_person(x, y, c, True), CREAM),
+        ("Top Language", data["top_lang"], "by bytes", icon_lang, GOLD),
     ]
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="GitHub achievements for {USER}">',
         f'<rect width="{W}" height="{H}" fill="{BG}" rx="14"/>',
         '<defs>',
         '<linearGradient id="hd" x1="0" y1="0" x2="1" y2="0">',
-        f'<stop offset="0%" stop-color="{TEAL}"/><stop offset="100%" stop-color="{VIOLET}"/>',
+        f'<stop offset="0%" stop-color="{GOLD}"/><stop offset="100%" stop-color="{CREAM}"/>',
         '</linearGradient>',
         '</defs>',
         f'<text x="32" y="46" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="url(#hd)">🏆 Achievement Wall</text>',

@@ -1,109 +1,133 @@
 <p align="center">
-  <img src="banner.svg" alt="Saveena Solanki — Computational Biologist" width="100%">
+  <img src="banner.jpeg" alt="Saveena Solanki — Computational Biologist" width="100%">
 </p>
 
 <p align="center">
-  <a href="https://github.com/SaveenaSolanki/SaveenaSolanki"><img src="https://komarev.com/ghpvc/?username=SaveenaSolanki&label=PROFILE%20VIEWS&color=5eead4&style=flat" alt="Profile views"></a>
-  <a href="https://github.com/SaveenaSolanki?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FSaveenaSolanki&query=public_repos&label=public%20repos&color=22d3ee&style=flat&labelColor=0d1117" alt="Public repos"></a>
-  <a href="https://saveenasolanki.github.io/"><img src="https://img.shields.io/badge/academic%20site-saveenasolanki.github.io-a78bfa?style=flat&labelColor=0d1117" alt="Academic site"></a>
-  <a href="https://github.com/SaveenaSolanki/compbio-toolkit-suite"><img src="https://img.shields.io/badge/CompBio%20Toolkit%20Suite-6%20tools-5eead4?style=flat&labelColor=0d1117" alt="CompBio Toolkit Suite"></a>
-  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10%2B-38bdf8?style=flat&labelColor=0d1117" alt="Python 3.10+"></a>
+  <a href="https://github.com/SaveenaSolanki/SaveenaSolanki"><img src="https://komarev.com/ghpvc/?username=SaveenaSolanki&label=PROFILE+VIEWS&color=ac946f&style=flat&labelColor=17110d" alt="Profile views"></a>
+  <a href="https://github.com/SaveenaSolanki?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FSaveenaSolanki&query=public_repos&label=repos&color=ac946f&style=flat&labelColor=17110d" alt="Public repos"></a>
+  <a href="https://saveenasolanki.github.io/"><img src="https://img.shields.io/badge/academic+site-saveenasolanki.github.io-d4b87a?style=flat&labelColor=17110d" alt="Academic site"></a>
+  <a href="https://github.com/SaveenaSolanki/compbio-toolkit-suite"><img src="https://img.shields.io/badge/CompBio+Toolkit+Suite-6+tools-f5e3ca?style=flat&labelColor=17110d" alt="CompBio Toolkit Suite"></a>
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10%2B-ac946f?style=flat&labelColor=17110d" alt="Python 3.10+"></a>
 </p>
 
 ---
 
-## 🧬 About
+## Prologue
 
-> **Computational biologist building AI beyond observed biological space** — across unseen
-> molecules, proteins, interactions, and cellular states.
+**Biology is messy.** Molecules arrive salted, malformed, mislabeled. Assays speak in
+competing dialects — nanomolar here, micromolar there, thresholds everywhere. Knowledge
+graphs tangle thousands of relations without a shared grammar. And before any model can
+learn from this, someone has to make the data *honest*.
 
-I work at the intersection of **machine learning, cheminformatics, and biomedical knowledge
-graphs**, turning messy biological data into structured, reproducible, ML-ready pipelines.
-Every project on this profile is small by design, composable by philosophy, and tested by default.
+That is what I do.
 
-**IIIT Delhi** · Computational Biology · Open Science
+I am a computational biologist at **IIIT Delhi**, working at the intersection of machine
+learning, cheminformatics, and biomedical knowledge graphs. My research is aimed at
+**building AI beyond observed biological space** — across unseen molecules, proteins,
+interactions, and cellular states. The road to that goal runs through data that is clean,
+comparable, and reproducible. Every repository on this profile is a step on that road.
 
 ---
 
-## 🔬 Research Pillars
+## Chapter I · The Mission
 
-| | Focus | Tooling |
+Four arenas, one thread — turning raw biology into learned models.
+
+| Arena | What I work on | Tools of the trade |
 |---|---|---|
-| 🧪 **Molecular representation** | SMILES cleaning, canonicalization, scaffold-aware splitting, chemical-space analysis | RDKit, scikit-learn |
-| 🧫 **Bioactivity & assay data** | Unit standardization, pActivity conversion, data-quality flagging | pandas, NumPy |
+| 🧪 **Molecular representation** | Cleaning and canonicalizing structures, scaffold-aware splits, chemical-space analysis | RDKit, scikit-learn |
+| 🧫 **Bioactivity & assay data** | Unit standardization, pActivity conversion, quality flagging | pandas, NumPy |
 | 🕸️ **Biomedical knowledge graphs** | Relation-sign standardization, structural auditing, identifier harmonization | pandas, Typer |
-| 🤖 **ML engineering for biology** | Leakage-aware splits, featurizer baselines, reproducible CLI pipelines | scikit-learn, pytest, ruff |
+| 🤖 **ML engineering for biology** | Leakage-aware evaluation, featurizer baselines, reproducible CLI pipelines | scikit-learn, pytest, ruff |
 
 ---
 
-## 🛠️ CompBio Toolkit Suite
+## Chapter II · The Pipeline
 
-A curated suite of lightweight, open-source utilities for computational biology and drug-discovery
-data engineering — each tool ships with a **CLI**, a **Python API**, and a **pytest** suite.
+**From raw molecules to learned models** — the *CompBio Toolkit Suite* is not six random
+utilities. It is one pipeline, split into composable stages. Each stage owns one problem,
+ships a CLI, and is tested. Install only the stage you need; run them together when you
+need the whole journey.
 
-<div align="center">
+```
+   molecules           assays            graphs            models
+ ─────────────      ─────────────      ─────────────      ─────────────
+ raw SMILES    ──▶  smiles-cleankit   ──▶  clean, canonical, desalted structures
+ bioassay      ──▶  assaytablecleaner ──▶  unit-standardized values + pActivity
+ libraries     ──▶  scaffoldsplitlab  ──▶  leakage-free train / val / test splits
+ identifiers   ──▶  molidmapper       ──▶  harmonized PubChem / ChEMBL / UniProt IDs
+ KG edges      ──▶  biokg-signmapper  ──▶  relations mapped to controlled signs
+ KG structure  ──▶  kg-stats-audit    ──▶  node/edge statistics + audit report
+```
 
-| Tool | CLI | Purpose |
-|---|---|---|
-| [**smiles-cleankit**](https://github.com/SaveenaSolanki/smiles-cleankit) | `smiles-clean` | Clean, canonicalize, desalt & validate SMILES; InChIKey generation |
-| [**assaytablecleaner**](https://github.com/SaveenaSolanki/assaytablecleaner) | `assay-clean` | Standardize assay units → molar, compute pActivity, flag quality issues |
-| [**scaffoldsplitlab**](https://github.com/SaveenaSolanki/scaffoldsplitlab) | `scaffold-split` | Leakage-aware scaffold / random / hash splits for molecular ML |
-| [**biokg-signmapper**](https://github.com/SaveenaSolanki/biokg-signmapper) | `biokg-sign` | Map KG relations → controlled signs (activation, inhibition, …) |
-| [**kg-stats-audit**](https://github.com/SaveenaSolanki/kg-stats-audit) | `kg-audit` | Node/edge statistics, degree distributions, isolated-node detection |
-| [**molidmapper**](https://github.com/SaveenaSolanki/molidmapper) | `molid-map` | Detect & merge PubChem / ChEMBL / DrugBank / UniProt identifiers |
+| Stage | Tool | CLI | Role in the pipeline |
+|---|---|---|---|
+| 1 · Molecules | [**smiles-cleankit**](https://github.com/SaveenaSolanki/smiles-cleankit) | `smiles-clean` | Validate, canonicalize, desalt; InChIKey generation |
+| 2 · Assays | [**assaytablecleaner**](https://github.com/SaveenaSolanki/assaytablecleaner) | `assay-clean` | Unit conversion to molar, pActivity, quality flags |
+| 3 · Splits | [**scaffoldsplitlab**](https://github.com/SaveenaSolanki/scaffoldsplitlab) | `scaffold-split` | Scaffold / random / hash splits with leakage checks |
+| 4 · Identifiers | [**molidmapper**](https://github.com/SaveenaSolanki/molidmapper) | `molid-map` | Detect & merge PubChem / ChEMBL / DrugBank / UniProt |
+| 5 · Relations | [**biokg-signmapper**](https://github.com/SaveenaSolanki/biokg-signmapper) | `biokg-sign` | KG relations → activation / inhibition / association… |
+| 6 · Structure | [**kg-stats-audit**](https://github.com/SaveenaSolanki/kg-stats-audit) | `kg-audit` | Degree distributions, isolated nodes, audit reports |
 
-</div>
-
-**Also building:**
-- 🎨 [**SciSVG**](https://github.com/SaveenaSolanki/SciSVG) — an open library of editable scientific vector graphics for figures, presentations, and publications (30+ assets, CC BY 4.0)
-- 📄 [**Academic profile**](https://saveenasolanki.github.io/) — personal site & portfolio
+Three more stages are on the bench — chemical-space maps, featurizer benchmarks, and
+target-set profiling. See the [suite roadmap](https://github.com/SaveenaSolanki/compbio-toolkit-suite/blob/main/ROADMAP.md).
 
 ---
 
-## 🧰 Tech Stack
+## Chapter III · The Craft
+
+Small tools. One job each. CLI-first. Tested with `pytest`, linted with `ruff`,
+documented with examples. No private datasets, no black boxes — toy examples only, so
+every result is reproducible by anyone, anywhere.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/RDKit-4D8C5C?style=for-the-badge&logo=rdkit&logoColor=white" alt="RDKit">
-  <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas">
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn">
-  <img src="https://img.shields.io/badge/Typer-5EEAD4?style=for-the-badge&logo=python&logoColor=0d1117" alt="Typer CLI">
-  <img src="https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="pytest">
-  <img src="https://img.shields.io/badge/ruff-D7FF64?style=for-the-badge&logo=ruff&logoColor=0d1117" alt="ruff">
-  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions">
-  <img src="https://img.shields.io/badge/SVG-FFB13B?style=for-the-badge&logo=svg&logoColor=0d1117" alt="SVG">
+  <img src="https://img.shields.io/badge/Python-ac946f?style=for-the-badge&logo=python&logoColor=17110d&labelColor=241a14" alt="Python">
+  <img src="https://img.shields.io/badge/RDKit-f5e3ca?style=for-the-badge&logo=rdkit&logoColor=17110d&labelColor=241a14" alt="RDKit">
+  <img src="https://img.shields.io/badge/pandas-ac946f?style=for-the-badge&logo=pandas&logoColor=17110d&labelColor=241a14" alt="pandas">
+  <img src="https://img.shields.io/badge/NumPy-f5e3ca?style=for-the-badge&logo=numpy&logoColor=17110d&labelColor=241a14" alt="NumPy">
+  <img src="https://img.shields.io/badge/scikit--learn-ac946f?style=for-the-badge&logo=scikitlearn&logoColor=17110d&labelColor=241a14" alt="scikit-learn">
+  <img src="https://img.shields.io/badge/Typer-f5e3ca?style=for-the-badge&logo=python&logoColor=17110d&labelColor=241a14" alt="Typer CLI">
+  <img src="https://img.shields.io/badge/pytest-ac946f?style=for-the-badge&logo=pytest&logoColor=17110d&labelColor=241a14" alt="pytest">
+  <img src="https://img.shields.io/badge/ruff-f5e3ca?style=for-the-badge&logo=ruff&logoColor=17110d&labelColor=241a14" alt="ruff">
+  <img src="https://img.shields.io/badge/GitHub+Actions-ac946f?style=for-the-badge&logo=githubactions&logoColor=17110d&labelColor=241a14" alt="GitHub Actions">
+  <img src="https://img.shields.io/badge/Jupyter-f5e3ca?style=for-the-badge&logo=jupyter&logoColor=17110d&labelColor=241a14" alt="Jupyter">
 </p>
 
 ---
 
-## 📊 GitHub Analytics
+## Chapter IV · The Record
 
 <div align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=SaveenaSolanki&show_icons=true&theme=transparent&title_color=5eead4&icon_color=a78bfa&text_color=c9d1d9&bg_color=0d1117&hide_border=true&count_private=true" alt="GitHub stats" height="180">
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=SaveenaSolanki&layout=compact&langs_count=8&theme=transparent&title_color=5eead4&text_color=c9d1d9&bg_color=0d1117&hide_border=true" alt="Top languages" height="180">
+  <img src="https://github-stats-extended.vercel.app/api?username=SaveenaSolanki&show_icons=true&theme=transparent&title_color=d4b87a&icon_color=ac946f&text_color=f5e3ca&bg_color=17110d&hide_border=true&count_private=true" alt="GitHub stats" height="180">
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=SaveenaSolanki&layout=compact&langs_count=8&theme=transparent&title_color=d4b87a&text_color=f5e3ca&bg_color=17110d&hide_border=true" alt="Top languages" height="180">
   <br>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=SaveenaSolanki&theme=transparent&background=0d1117&hide_border=true&ring=5eead4&fire=a78bfa&currStreakLabel=5eead4&sideLabels=c9d1d9&dates=8b949e" alt="GitHub streak" width="420">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=SaveenaSolanki&theme=transparent&background=17110d&hide_border=true&ring=d4b87a&fire=ac946f&currStreakLabel=d4b87a&sideLabels=f5e3ca&dates=a08a6c" alt="GitHub streak" width="420">
   <br><br>
   <img src="analytics/achievements.svg" alt="Achievement wall — self-hosted analytics" width="100%">
   <br><br>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SaveenaSolanki&theme=react-dark&bg_color=0d1117&hide_border=true&area=true&color=5eead4&line=a78bfa&point=22d3ee" alt="GitHub activity graph" width="100%">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SaveenaSolanki&theme=react-dark&bg_color=17110d&hide_border=true&area=true&color=d4b87a&line=ac946f&point=f5e3ca&area_color=2d221c" alt="GitHub activity graph" width="100%">
 </div>
 
 > 🏆 The achievement wall is **self-hosted** — generated from the GitHub API by
-> [`.github/workflows/analytics.yml`](.github/workflows/analytics.yml) on a monthly schedule
-> (no third-party badge services).
+> [`.github/workflows/analytics.yml`](.github/workflows/analytics.yml) on a monthly schedule.
+> No third-party badge services.
 
 ---
 
-## 📬 Connect
+## Epilogue · Open Science
+
+Science should be reproducible, and figures should be re-usable. Alongside the toolkit,
+I maintain [**SciSVG**](https://github.com/SaveenaSolanki/SciSVG) — an open library of
+editable scientific vector graphics (30+ assets, CC BY 4.0) for figures, presentations,
+and publications — and an [academic profile](https://saveenasolanki.github.io/) with my
+research and portfolio.
 
 <p align="center">
-  <a href="https://saveenasolanki.github.io/"><img src="https://img.shields.io/badge/Portfolio-saveenasolanki.github.io-0d1117?style=for-the-badge&logo=githubpages&logoColor=white&labelColor=5eead4" alt="Portfolio"></a>
-  <a href="mailto:saveenas@iiitd.ac.in"><img src="https://img.shields.io/badge/Email-saveenas%40iiitd.ac.in-0d1117?style=for-the-badge&logo=gmail&logoColor=white&labelColor=a78bfa" alt="Email"></a>
-  <a href="https://github.com/SaveenaSolanki"><img src="https://img.shields.io/badge/GitHub-%40SaveenaSolanki-0d1117?style=for-the-badge&logo=github&logoColor=white&labelColor=22d3ee" alt="GitHub"></a>
+  <a href="https://saveenasolanki.github.io/"><img src="https://img.shields.io/badge/Portfolio-saveenasolanki.github.io-17110d?style=for-the-badge&logo=githubpages&logoColor=17110d&labelColor=f5e3ca" alt="Portfolio"></a>
+  <a href="mailto:saveenas@iiitd.ac.in"><img src="https://img.shields.io/badge/Email-saveenas%40iiitd.ac.in-17110d?style=for-the-badge&logo=gmail&logoColor=17110d&labelColor=ac946f" alt="Email"></a>
+  <a href="https://github.com/SaveenaSolanki"><img src="https://img.shields.io/badge/GitHub-%40SaveenaSolanki-17110d?style=for-the-badge&logo=github&logoColor=17110d&labelColor=d4b87a" alt="GitHub"></a>
 </p>
 
 <p align="center">
-  <sub><i>"Open tools, reproducible science, small composable pieces."</i></sub>
+  <sub><i>"From raw molecules to learned models — open tools, reproducible science, small composable pieces."</i></sub>
 </p>
