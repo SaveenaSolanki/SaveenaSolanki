@@ -1,106 +1,264 @@
 <p align="center">
-  <img src="banner.jpeg" alt="Saveena Solanki — Computational Biology × Molecular AI" width="100%">
+  <img src="banner.svg" alt="Saveena Solanki — Computational Biology and Molecular AI" width="100%">
 </p>
 
 <p align="center">
-  <a href="https://github.com/SaveenaSolanki/SaveenaSolanki"><img src="https://komarev.com/ghpvc/?username=SaveenaSolanki&label=PROFILE+VIEWS&color=ac946f&style=flat&labelColor=17110d" alt="Profile views"></a>
-  <a href="https://github.com/SaveenaSolanki?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FSaveenaSolanki&query=public_repos&label=repos&color=ac946f&style=flat&labelColor=17110d" alt="Public repos"></a>
-  <a href="https://saveenasolanki.github.io/"><img src="https://img.shields.io/badge/academic+site-saveenasolanki.github.io-d4b87a?style=flat&labelColor=17110d" alt="Academic site"></a>
-  <a href="mailto:saveenas@iiitd.ac.in"><img src="https://img.shields.io/badge/email-saveenas%40iiitd.ac.in-f5e3ca?style=flat&labelColor=17110d" alt="Email"></a>
+  <a href="https://saveenasolanki.github.io/">Portfolio</a> · <a href="https://www.linkedin.com/in/saveenasolanki/">LinkedIn</a> · <a href="mailto:saveenas@iiitd.ac.in">Email</a>
 </p>
 
 ---
 
-## SAVEENA SOLANKI
+## Computational Biology × Molecular AI
 
-### Computational Biology × Molecular AI
+I develop computational approaches for understanding biology across molecular scales — from learning representations of individual molecules to modeling protein interactions and the biological systems those interactions reshape.
 
-**Building AI from molecular representation to protein interactions and biological systems.**
+My research sits at the intersection of:
 
-*Representation learning · molecular interactions · targeted degradation · molecular glues · biomedical knowledge graphs*
+*molecular representation learning · protein interactions · targeted protein degradation · molecular glues · mechanistic machine learning · biomedical knowledge graphs*
+
+**Research question:** How can AI move beyond memorizing observed chemical and biological space to reason about unseen molecules, interactions and biological states?
 
 ---
 
-## My Research
-
-One continuous arc — from single molecules to the biological systems they reshape:
+## Research Program
 
 <p align="center">
-  <img src="research-map.svg" alt="My research program — molecules to biological systems" width="88%">
+  <b>MOLECULES</b> &nbsp; → &nbsp; <b>REPRESENTATIONS</b> &nbsp; → &nbsp; <b>INTERACTIONS</b> &nbsp; → &nbsp; <b>BIOLOGICAL SYSTEMS</b> &nbsp; → &nbsp; <b>DISCOVERY</b>
 </p>
+
+My projects address different parts of this continuum.
 
 ---
 
-## Selected Research
+## Flagship Research
 
-| System | What it is | Status |
-|---|---|---|
-| [**ChemicalDice · CDI**](https://github.com/the-ahuja-lab/ChemicalDice) | Multimodal molecular representation learning — fuses bioactivity, language, graph, physicochemical, and image-based views of a molecule into one latent embedding, distilled into a SMILES-based model for chemical-space generalization | [Code](https://github.com/the-ahuja-lab/ChemicalDice) · [Docs](https://the-ahuja-lab.github.io/ChemicalDice/) · [Colab](https://colab.research.google.com/drive/1I6vQ_7SlhagbnXVlg4btWoYal_NcCElt?usp=sharing) |
-| [**SynGlue**](https://github.com/the-ahuja-lab/SynGlue) | Generative AI for targeted protein degradation — generates, analyzes, and optimizes PROTACs; predicts degradation potency (DC₅₀, Dmax) and guides linker selection | [Code](https://github.com/the-ahuja-lab/SynGlue) · [PyPI](https://pypi.org/project/synglue/) · [Colab](https://colab.research.google.com/drive/1k3UyoqYU_zw6_GbdeaARe155dCi_JO6Q?usp=sharing) |
+### 01 · ChemicalDice / CDI
+**Learning representations of molecules**
 
-**Mechanism-aware molecular ML** — *first-author projects*, connecting chemical representations with interpretable biological mechanisms:
+*How should a molecule be represented when no single molecular description captures all of its biology and chemistry?*
 
-| Project | What it is | Links |
-|---|---|---|
-| [**EvOlf**](https://github.com/the-ahuja-lab/EvOlf) | Evolutionary-guided deep learning for mammalian GPCRome agonist prediction — ligand–GPCR interactions across 20+ species, odorant & non-odorant GPCRs, deorphanization | [Code](https://github.com/the-ahuja-lab/EvOlf) · [Web server](https://evolf.ahujalab.iiitd.edu.in/) · [Pipeline](https://github.com/the-ahuja-lab/evolf-pipeline) |
-| [**evolf-pipeline**](https://github.com/the-ahuja-lab/evolf-pipeline) | Nextflow pipeline for large-scale ligand–GPCR interaction screens — featurization, protein embeddings, deep-learning inference on HPC/cloud | [Code](https://github.com/the-ahuja-lab/evolf-pipeline) |
-| [**Trojan-Horses**](https://github.com/the-ahuja-lab/Trojan-Horses) | Mechanism-aware deep learning for ROS modulator & antioxidant activity prediction with mechanistic interpretability | [Code](https://github.com/the-ahuja-lab/Trojan-Horses) |
-| [**Gcoupler**](https://github.com/the-ahuja-lab/Gcoupler) | AI-driven structure-based de novo ligand design — graph neural networks, statistical validation, bioactivity prioritization; GPCR–Gα allosteric modulation | [Code](https://github.com/the-ahuja-lab/Gcoupler) · [eLife preprint](https://elifesciences.org/reviewed-preprints/106397) |
-| [**Inertrope**](https://github.com/the-ahuja-lab/Inertrope) | Thermodynamic fingerprints → liquid-biopsy diagnostics — multiclass classification of ITC/spectroscopic data (Healthy · Benign · Cancer) | [Code](https://github.com/the-ahuja-lab/Inertrope) |
-| **MetaboGlue** | Metabolite-mediated protein-interaction stabilization & inhibition — molecular glues at the interface of metabolism and proteostasis | *in preparation* |
-| **SynMol** | *in preparation* | *in preparation* |
+ChemicalDice / CDI explores multimodal molecular representation learning by integrating complementary molecular views into a unified latent representation. The framework brings together information derived from:
+
+- physicochemical properties
+- molecular graphs
+- two-dimensional molecular representations
+- bioactivity information
+- quantum-chemical properties
+- molecular language models
+
+These complementary representations are integrated and subsequently distilled into a deployable molecular representation accessible from SMILES. The broader objective is to construct representations that remain useful beyond the exact chemical space observed during training.
+
+**Research themes:** Multimodal Learning · Molecular Representations · Representation Distillation · Chemical Space · Drug Discovery
+
+**Resources:** [Code](https://github.com/the-ahuja-lab/ChemicalDice) · [Documentation](https://the-ahuja-lab.github.io/ChemicalDice/)
+
+---
+
+### 02 · SynGlue
+**Designing molecules that control protein fate**
+
+*Why do apparently similar PROTACs produce very different degradation outcomes?*
+
+SynGlue approaches targeted protein degradation as a coupled molecular-design problem involving:
+
+> Target ligand + E3-ligase ligand + linker + ternary-complex geometry + degradation behaviour
+
+rather than treating the warhead as the sole determinant of degrader activity.
+
+The platform integrates computational approaches for analysing and designing PROTACs, including molecular generation, linker reasoning, degradation modelling and structure-informed prioritisation. The larger scientific question is how small molecules can be engineered to create productive interactions between proteins and redirect cellular machinery.
+
+**Research themes:** Targeted Protein Degradation · PROTACs · Generative AI · Ternary Complexes · Polypharmacology
+
+**Resources:** [Code](https://github.com/the-ahuja-lab/SynGlue) · [PyPI](https://pypi.org/project/synglue/)
+
+---
+
+### 03 · MetaboGlue
+**Understanding molecules that reprogram protein interactions**
+
+*Can endogenous metabolites and small molecules create, stabilise or inhibit protein interactions?*
+
+MetaboGlue extends my interest from conventional protein–ligand modelling toward unified **Protein–Ligand (PL)** and **Protein–Ligand–Protein (PLP)** interaction modelling. The goal is to understand the molecular principles governing metabolite-mediated protein-interaction modulation and molecular-glue behaviour.
+
+The framework combines ligand, protein and structural information to study how small molecules may alter interaction landscapes rather than acting only through classical one-protein/one-ligand binding.
+
+**Research themes:** Molecular Glues · Protein Interactions · PL/PLP Modelling · Multimodal AI · Structural Biology
+
+**Status:** Active research.
+
+---
+
+## Selected First-Author Research
+
+### EvOlf
+**Evolution-guided ligand–GPCR prediction**
+
+*Can evolutionary information improve molecular recognition models across the mammalian GPCRome?*
+
+EvOlf uses evolutionary and molecular information to model ligand–GPCR interactions across diverse mammalian receptors and species, with applications including receptor deorphanisation. The accompanying computational pipeline supports large-scale ligand–receptor screening using molecular featurisation, protein representations and deep-learning inference.
+
+**Themes:** GPCRs · Evolutionary Biology · Protein Embeddings · Molecular Recognition
+
+**Resources:** [Code](https://github.com/the-ahuja-lab/EvOlf) · [Web Server](https://evolf.ahujalab.iiitd.edu.in/) · [Pipeline](https://github.com/the-ahuja-lab/evolf-pipeline)
+
+---
+
+### Gcoupler
+**Structure-guided molecular design**
+
+*Can structural information guide the discovery of molecules that modulate protein signalling?*
+
+Gcoupler explores AI-driven structure-based molecular design with applications in GPCR–G-protein signalling and allosteric modulation. The framework combines computational molecular design, graph-based learning, structural information and bioactivity prioritisation.
+
+**Themes:** Structure-Based Design · Graph Neural Networks · GPCR Signalling · Molecular Design
+
+**Resources:** [Code](https://github.com/the-ahuja-lab/Gcoupler) · [eLife](https://elifesciences.org/reviewed-preprints/106397)
+
+---
+
+### Trojan-Horses
+**Mechanism-aware molecular machine learning**
+
+*Can molecular ML distinguish compounds through the mechanisms by which they alter redox biology?*
+
+This work develops mechanism-aware models for analysing ROS modulators and antioxidant behaviour while connecting molecular information with biologically interpretable mechanisms.
+
+**Themes:** Redox Biology · Mechanistic ML · Molecular Representations · Interpretability
+
+**Resources:** [Code](https://github.com/the-ahuja-lab/Trojan-Horses)
+
+---
+
+### Inertrope
+**Thermodynamic fingerprints as biological signals**
+
+*Can molecular-interaction thermodynamics encode diagnostically useful biological states?*
+
+Inertrope investigates machine-learning approaches based on thermodynamic and spectroscopic fingerprints for distinguishing biological sample states. This work reflects a broader interest in extracting predictive biological information from biophysical measurements rather than relying only on conventional molecular descriptors.
+
+**Themes:** Biophysical ML · Thermodynamics · Diagnostics · Molecular Interactions
+
+**Resources:** [Code](https://github.com/the-ahuja-lab/Inertrope)
+
+---
+
+## How the Projects Connect
+
+**Represent**
+
+ChemicalDice / CDI — learn richer representations of molecular identity.
+
+↓
+
+**Recognise**
+
+EvOlf · Gcoupler · Trojan-Horses — understand how molecular structure relates to biological recognition and mechanism.
+
+↓
+
+**Reprogram**
+
+SynGlue · MetaboGlue — study molecules that create, stabilise, inhibit or redirect protein interactions.
+
+↓
+
+**Reason**
+
+Biomedical knowledge graphs · pathway models — connect molecular perturbations to larger biological systems.
+
+↓
+
+**Discover**
+
+Develop computational strategies for molecular intervention and biological discovery.
 
 ---
 
 ## Research Infrastructure
 
-The scientific systems above depend on reliable molecular and biological data. I therefore
-maintain a modular computational-biology toolkit covering molecular standardization, assay
-harmonization, identifier resolution, molecular splitting, and knowledge-graph quality control.
-
-<div align="center">
-
-[**Prepare**](https://github.com/SaveenaSolanki/smiles-cleankit) → [**Harmonize**](https://github.com/SaveenaSolanki/assaytablecleaner) → [**Map**](https://github.com/SaveenaSolanki/molidmapper) → [**Split**](https://github.com/SaveenaSolanki/scaffoldsplitlab) → [**Structure**](https://github.com/SaveenaSolanki/biokg-signmapper) → [**Audit**](https://github.com/SaveenaSolanki/kg-stats-audit)
-
-</div>
-
-| Stage | Tool | CLI |
-|---|---|---|
-| Prepare | [smiles-cleankit](https://github.com/SaveenaSolanki/smiles-cleankit) | `smiles-clean` |
-| Harmonize | [assaytablecleaner](https://github.com/SaveenaSolanki/assaytablecleaner) | `assay-clean` |
-| Map | [molidmapper](https://github.com/SaveenaSolanki/molidmapper) | `molid-map` |
-| Split | [scaffoldsplitlab](https://github.com/SaveenaSolanki/scaffoldsplitlab) | `scaffold-split` |
-| Structure | [biokg-signmapper](https://github.com/SaveenaSolanki/biokg-signmapper) | `biokg-sign` |
-| Audit | [kg-stats-audit](https://github.com/SaveenaSolanki/kg-stats-audit) | `kg-audit` |
-
-Six small tools, one pipeline — each CLI-first, tested with `pytest`, linted with `ruff`,
-documented with toy examples so every result is reproducible. Suite overview:
-[**compbio-toolkit-suite**](https://github.com/SaveenaSolanki/compbio-toolkit-suite).
-
----
-
-## Open Science & Collaboration
-
-Science should be reproducible — including its figures. I maintain
-[**SciSVG**](https://github.com/SaveenaSolanki/SciSVG), an open library of editable
-scientific vector graphics (30+ assets, CC BY 4.0) for figures, presentations, and
-publications, and an [academic profile](https://saveenasolanki.github.io/) with my research
-and portfolio.
-
-I am open to collaborations on **molecular representation learning, targeted degradation
-(PROTACs & molecular glues), and biomedical knowledge-graph modeling** — and to building
-the data infrastructure those projects need.
+The models above depend on molecular and biological data that are standardised, traceable and evaluation-ready. I therefore maintain a set of lightweight computational-biology tools addressing recurring infrastructure problems.
 
 <p align="center">
-  <a href="https://saveenasolanki.github.io/"><img src="https://img.shields.io/badge/Portfolio-saveenasolanki.github.io-17110d?style=for-the-badge&logo=githubpages&logoColor=17110d&labelColor=f5e3ca" alt="Portfolio"></a>
-  <a href="mailto:saveenas@iiitd.ac.in"><img src="https://img.shields.io/badge/Email-saveenas%40iiitd.ac.in-17110d?style=for-the-badge&logo=gmail&logoColor=17110d&labelColor=ac946f" alt="Email"></a>
-  <a href="https://github.com/SaveenaSolanki"><img src="https://img.shields.io/badge/GitHub-%40SaveenaSolanki-17110d?style=for-the-badge&logo=github&logoColor=17110d&labelColor=d4b87a" alt="GitHub"></a>
+  <b>PREPARE</b> &nbsp; → &nbsp; <b>HARMONISE</b> &nbsp; → &nbsp; <b>MAP</b> &nbsp; → &nbsp; <b>SPLIT</b> &nbsp; → &nbsp; <b>STRUCTURE</b> &nbsp; → &nbsp; <b>AUDIT</b>
 </p>
+
+**Prepare** — [smiles-cleankit](https://github.com/SaveenaSolanki/smiles-cleankit)
+Canonicalise, validate and standardise molecular structures.
+
+**Harmonise** — [assaytablecleaner](https://github.com/SaveenaSolanki/assaytablecleaner)
+Standardise bioactivity measurements and derive comparable activity values.
+
+**Map** — [molidmapper](https://github.com/SaveenaSolanki/molidmapper)
+Resolve and harmonise molecular and biological identifiers across databases.
+
+**Split** — [scaffoldsplitlab](https://github.com/SaveenaSolanki/scaffoldsplitlab)
+Generate leakage-aware molecular machine-learning splits.
+
+**Structure** — [biokg-signmapper](https://github.com/SaveenaSolanki/biokg-signmapper)
+Standardise relation semantics in biomedical knowledge graphs.
+
+**Audit** — [kg-stats-audit](https://github.com/SaveenaSolanki/kg-stats-audit)
+Inspect graph structure, connectivity and dataset quality.
+
+**Toolkit** — [CompBio Toolkit Suite](https://github.com/SaveenaSolanki/compbio-toolkit-suite)
+A common entry point connecting the reusable components.
 
 ---
 
-<div align="center">
-  <img src="analytics/achievements.svg" alt="Achievement wall — self-hosted analytics" width="55%">
-  <sub><br><i>From raw molecules to learned models — open tools, reproducible science, small composable pieces.</i><br>
-  Achievement wall generated from the GitHub API by <a href=".github/workflows/analytics.yml">GitHub Actions</a>.</sub>
-</div>
+## Open Scientific Software
+
+### SciSVG
+
+[SciSVG](https://github.com/SaveenaSolanki/SciSVG) is an open collection of editable scientific vector graphics designed for figures, presentations and scientific communication.
+
+This project reflects another principle of my work: *scientific outputs should be reusable* — not only scientific models and datasets, but also the tools used to communicate them.
+
+---
+
+## Scientific Questions I Care About
+
+- **Molecular generalisation** — How do molecular models remain useful outside the chemical space on which they were trained?
+- **Representation complementarity** — What genuinely new information does one molecular representation contribute beyond another?
+- **Interaction biology** — How can small molecules create, stabilise, inhibit or reconfigure protein interactions?
+- **Mechanistic machine learning** — Can predictive models provide insight into biological mechanisms rather than producing endpoint scores alone?
+- **Biological state** — How can molecular perturbations be linked to pathways, interaction networks and system-level biological consequences?
+- **Reproducibility** — How do we turn computational experiments into research systems that another scientist can reproduce and extend?
+
+---
+
+## Computational Focus
+
+Python · PyTorch · RDKit · scikit-learn · pandas · NumPy
+
+Deep Learning · Multimodal Learning · Molecular Representation Learning
+
+Protein–Ligand Modelling · Protein Interaction Modelling
+
+Cheminformatics · Biomedical Knowledge Graphs
+
+Docker · Reproducible Pipelines · Scientific Software
+
+---
+
+## Collaboration
+
+I am interested in collaborations spanning:
+
+- molecular representation learning
+- molecular recognition
+- protein-interaction modulation
+- targeted protein degradation
+- molecular glues
+- multimodal biological AI
+- biomedical knowledge graphs
+- computational drug discovery
+
+---
+
+<p align="center">
+  <b>Computational Biology · IIIT Delhi</b>
+</p>
+
+<p align="center">
+  <a href="https://saveenasolanki.github.io/">Portfolio</a> · <a href="https://www.linkedin.com/in/saveenasolanki/">LinkedIn</a> · <a href="mailto:saveenas@iiitd.ac.in">Email</a> · <a href="https://github.com/SaveenaSolanki">GitHub</a>
+</p>
