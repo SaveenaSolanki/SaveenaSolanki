@@ -1,41 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" role="img" aria-label="GitHub achievements for SaveenaSolanki">
-<rect width="1000" height="330" fill="#17110d" rx="14"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 364" role="img" aria-label="GitHub achievements for SaveenaSolanki">
+<rect width="1000" height="364" fill="#17110d" rx="14"/>
 <defs>
 <linearGradient id="hd" x1="0" y1="0" x2="1" y2="0">
 <stop offset="0%" stop-color="#d4b87a"/><stop offset="100%" stop-color="#f5e3ca"/>
 </linearGradient>
 </defs>
-<text x="32" y="46" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="url(#hd)">🏆 Achievement Wall</text>
+<text x="32" y="46" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="url(#hd)" letter-spacing="4">ACHIEVEMENT WALL</text>
 <text x="32" y="70" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#a08a6c">Live GitHub analytics · auto-refreshed by GitHub Actions · SaveenaSolanki</text>
-<rect x="32" y="92" width="300" height="104" rx="12" fill="#241a14" stroke="#3a2c1e" stroke-width="1"/>
-<polygon points="48,108 74,95 100,108 100,134 74,147 48,134" fill="none" stroke="#d4b87a" stroke-width="2.5" stroke-linejoin="round"/><circle cx="74" cy="121" r="4" fill="#d4b87a"/>
-<text x="124" y="136" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#f5e3ca">12</text>
-<text x="124" y="160" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#d4b87a">Repositories</text>
-<text x="124" y="178" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#a08a6c">public repos</text>
-<rect x="352" y="92" width="300" height="104" rx="12" fill="#241a14" stroke="#3a2c1e" stroke-width="1"/>
-<polygon points="394.0,108.0 400.5,125.1 418.7,126.0 404.5,137.4 409.3,155.0 394.0,145.0 378.7,155.0 383.5,137.4 369.3,126.0 387.5,125.1" fill="#c9a86a"/>
-<text x="444" y="136" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#f5e3ca">8</text>
-<text x="444" y="160" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#c9a86a">Total Stars</text>
-<text x="444" y="178" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#a08a6c">across all repos</text>
-<rect x="672" y="92" width="300" height="104" rx="12" fill="#241a14" stroke="#3a2c1e" stroke-width="1"/>
-<path d="M 714 114 v 12 M 714 126 c 0 8 -14 6 -14 -4 M 714 126 c 0 8 14 6 14 -4" fill="none" stroke="#ac946f" stroke-width="2.6" stroke-linecap="round"/><circle cx="714" cy="113" r="3" fill="#ac946f"/><circle cx="700" cy="136" r="3" fill="#ac946f"/><circle cx="728" cy="136" r="3" fill="#ac946f"/>
-<text x="764" y="136" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#f5e3ca">0</text>
-<text x="764" y="160" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#ac946f">Total Forks</text>
-<text x="764" y="178" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#a08a6c">across all repos</text>
-<rect x="32" y="216" width="300" height="104" rx="12" fill="#241a14" stroke="#3a2c1e" stroke-width="1"/>
-<circle cx="70" cy="244" r="7" fill="#f5e3ca"/><path d="M 56 272 c 0 -9 8.5 -14 14 -14 s 14 5 14 14" fill="#f5e3ca"/>
-<text x="124" y="260" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#f5e3ca">2</text>
-<text x="124" y="284" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#f5e3ca">Followers</text>
-<text x="124" y="302" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#a08a6c">on GitHub</text>
-<rect x="352" y="216" width="300" height="104" rx="12" fill="#241a14" stroke="#3a2c1e" stroke-width="1"/>
-<circle cx="404" cy="244" r="7" fill="#f5e3ca"/><path d="M 390 272 c 0 -9 8.5 -14 14 -14 s 14 5 14 14" fill="#f5e3ca"/>
-<text x="444" y="260" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#f5e3ca">1</text>
-<text x="444" y="284" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#f5e3ca">Following</text>
-<text x="444" y="302" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#a08a6c">on GitHub</text>
-<rect x="672" y="216" width="300" height="104" rx="12" fill="#241a14" stroke="#3a2c1e" stroke-width="1"/>
-<path d="M 698 240 l -8 18 8 18 M 730 240 l 8 18 -8 18 M 716 236 l -6 36" fill="none" stroke="#d4b87a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="764" y="260" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#f5e3ca">Jupyter Notebook</text>
-<text x="764" y="284" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#d4b87a">Top Language</text>
-<text x="764" y="302" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#a08a6c">by bytes</text>
-<text x="32" y="316" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#a08a6c">Self-hosted analytics — no third-party badge services. Generated from the GitHub API.</text>
+<rect x="32" y="96" width="300" height="106" rx="12" fill="#241a14" stroke="#3a2c1e" stroke-width="1"/>
+<text x="312" y="122" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#3a2c1e" text-anchor="end">01</text>
+<polygon points="48,112 74,99 100,112 100,138 74,151 48,138" fill="none" stroke="#d4b87a" stroke-width="2.5" stroke-linejoin="round"/><circle cx="74" cy="125" r="4" fill="#d4b87a"/>
+<text x="124" y="142" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#f5e3ca">12</text>
+<text x="124" y="166" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#d4b87a">Repositories</text>
+<text x="124" y="184" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#a08a6c">public repos</text>
+<rect x="352" y="96" width="300" height="106" rx="12" fill="#241a14" stroke="#3a2c1e" stroke-width="1"/>
+<text x="632" y="122" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#3a2c1e" text-anchor="end">02</text>
+<polygon points="394.0,112.0 400.5,129.1 418.7,130.0 404.5,141.4 409.3,159.0 394.0,149.0 378.7,159.0 383.5,141.4 369.3,130.0 387.5,129.1" fill="#c9a86a"/>
+<text x="444" y="142" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#f5e3ca">8</text>
+<text x="444" y="166" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#c9a86a">Total Stars</text>
+<text x="444" y="184" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#a08a6c">across all repos</text>
+<rect x="672" y="96" width="300" height="106" rx="12" fill="#241a14" stroke="#3a2c1e" stroke-width="1"/>
+<text x="952" y="122" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#3a2c1e" text-anchor="end">03</text>
+<path d="M 714 118 v 12 M 714 130 c 0 8 -14 6 -14 -4 M 714 130 c 0 8 14 6 14 -4" fill="none" stroke="#ac946f" stroke-width="2.6" stroke-linecap="round"/><circle cx="714" cy="117" r="3" fill="#ac946f"/><circle cx="700" cy="140" r="3" fill="#ac946f"/><circle cx="728" cy="140" r="3" fill="#ac946f"/>
+<text x="764" y="142" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#f5e3ca">0</text>
+<text x="764" y="166" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#ac946f">Total Forks</text>
+<text x="764" y="184" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#a08a6c">across all repos</text>
+<rect x="32" y="222" width="300" height="106" rx="12" fill="#241a14" stroke="#3a2c1e" stroke-width="1"/>
+<text x="312" y="248" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#3a2c1e" text-anchor="end">04</text>
+<circle cx="70" cy="250" r="7" fill="#f5e3ca"/><path d="M 56 278 c 0 -9 8.5 -14 14 -14 s 14 5 14 14" fill="#f5e3ca"/>
+<text x="124" y="268" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#f5e3ca">2</text>
+<text x="124" y="292" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#f5e3ca">Followers</text>
+<text x="124" y="310" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#a08a6c">on GitHub</text>
+<rect x="352" y="222" width="300" height="106" rx="12" fill="#241a14" stroke="#3a2c1e" stroke-width="1"/>
+<text x="632" y="248" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#3a2c1e" text-anchor="end">05</text>
+<circle cx="404" cy="250" r="7" fill="#f5e3ca"/><path d="M 390 278 c 0 -9 8.5 -14 14 -14 s 14 5 14 14" fill="#f5e3ca"/>
+<text x="444" y="268" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#f5e3ca">1</text>
+<text x="444" y="292" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#f5e3ca">Following</text>
+<text x="444" y="310" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#a08a6c">on GitHub</text>
+<rect x="672" y="222" width="300" height="106" rx="12" fill="#241a14" stroke="#3a2c1e" stroke-width="1"/>
+<text x="952" y="248" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#3a2c1e" text-anchor="end">06</text>
+<path d="M 698 246 l -8 18 8 18 M 730 246 l 8 18 -8 18 M 716 242 l -6 36" fill="none" stroke="#d4b87a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="764" y="268" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#f5e3ca">Jupyter Notebook</text>
+<text x="764" y="292" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#d4b87a">Top Language</text>
+<text x="764" y="310" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#a08a6c">by bytes</text>
+<text x="32" y="350" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#a08a6c">Self-hosted analytics — no third-party badge services. Generated from the GitHub API.</text>
 </svg>

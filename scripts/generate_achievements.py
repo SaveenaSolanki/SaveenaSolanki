@@ -69,6 +69,24 @@ def fmt(n):
     return str(n)
 
 
+def fit_size(text: str, max_w: float, start: int = 30) -> int:
+    """Largest font size (step 2) whose estimated width fits max_w.
+
+    Uses a conservative 0.60em average glyph width so long values such as
+    "Jupyter Notebook" shrink instead of overflowing the card.
+    """
+    size = start
+    while size > 12:
+        if 0.60 * size * len(text) <= max_w:
+            return size
+        size -= 2
+    return 12
+
+
+def clip(text: str, max_chars: int = 18) -> str:
+    """Truncate long values (e.g. language names) with an ellipsis."""
+    return text if len(text) <= max_chars else text[: max_chars - 1] + "…"
+
 # ---- minimal geometric icons ----
 def icon_repo(x, y, c):
     return (
@@ -113,14 +131,14 @@ def icon_lang(x, y, c):
 
 
 def render(data):
-    W, H = 1000, 330
+    W, H = 1000, 364
     cards = [
         ("Repositories", fmt(data["repos"]), "public repos", icon_repo, GOLD),
         ("Total Stars", fmt(data["stars"]), "across all repos", icon_star, PALE),
         ("Total Forks", fmt(data["forks"]), "across all repos", icon_fork, TAN),
         ("Followers", fmt(data["followers"]), "on GitHub", icon_person, CREAM),
         ("Following", fmt(data["following"]), "on GitHub", lambda x, y, c: icon_person(x, y, c, True), CREAM),
-        ("Top Language", data["top_lang"], "by bytes", icon_lang, GOLD),
+        ("Top Language", clip(data["top_lang"]), "by bytes", icon_lang, GOLD),
     ]
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="GitHub achievements for {USER}">',
@@ -130,19 +148,23 @@ def render(data):
         f'<stop offset="0%" stop-color="{GOLD}"/><stop offset="100%" stop-color="{CREAM}"/>',
         '</linearGradient>',
         '</defs>',
-        f'<text x="32" y="46" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="url(#hd)">🏆 Achievement Wall</text>',
+        f'<text x="32" y="46" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="url(#hd)" letter-spacing="4">ACHIEVEMENT WALL</text>',
         f'<text x="32" y="70" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="{DIM}">Live GitHub analytics · auto-refreshed by GitHub Actions · {USER}</text>',
     ]
-    cw, ch, gap = 300, 104, 20
-    x0, y0 = 32, 92
+    cw, ch, gap = 300, 106, 20
+    x0, y0 = 32, 96
+    max_w = cw - 92 - 20  # value text budget
     for i, (label, value, sub, icon, color) in enumerate(cards):
         cx = x0 + (i % 3) * (cw + gap)
         cy = y0 + (i // 3) * (ch + gap)
+        size = fit_size(value, max_w)
         parts.append(f'<rect x="{cx}" y="{cy}" width="{cw}" height="{ch}" rx="12" fill="{CARD}" stroke="{BORDER}" stroke-width="1"/>')
+        # stage index (ties into the pipeline narrative)
+        parts.append(f'<text x="{cx + cw - 20}" y="{cy + 26}" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="{BORDER}" text-anchor="end">{i + 1:02d}</text>')
         parts.append(icon(cx + 16, cy + 16, color))
-        parts.append(f'<text x="{cx+92}" y="{cy+44}" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="{TEXT}">{value}</text>')
-        parts.append(f'<text x="{cx+92}" y="{cy+68}" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="{color}">{label}</text>')
-        parts.append(f'<text x="{cx+92}" y="{cy+86}" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="{DIM}">{sub}</text>')
+        parts.append(f'<text x="{cx+92}" y="{cy+46}" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="{size}" font-weight="700" fill="{TEXT}">{value}</text>')
+        parts.append(f'<text x="{cx+92}" y="{cy+70}" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="{color}">{label}</text>')
+        parts.append(f'<text x="{cx+92}" y="{cy+88}" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="{DIM}">{sub}</text>')
     parts.append(
         f'<text x="32" y="{H-14}" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="{DIM}">'
         "Self-hosted analytics — no third-party badge services. Generated from the GitHub API.</text>"
