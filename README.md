@@ -29,12 +29,6 @@ One continuous arc — from single molecules to the biological systems they resh
   <img src="research-map.svg" alt="My research program — molecules to biological systems" width="88%">
 </p>
 
-The same thread runs through everything I build:
-
-- **Layer 1 · Scientist** — molecules → proteins → interactions → systems
-- **Layer 2 · Researcher** — CDI → SynGlue → MetaboGlue
-- **Layer 3 · Engineer** — the reproducible infrastructure below, making the science executable
-
 ---
 
 ## Selected Research
